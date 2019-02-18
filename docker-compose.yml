@@ -1,0 +1,9 @@
+on: '2'
+services:
+    app:
+        build: .
+        ports:
+            - "7000:7000"
+        volumes:
+            - "./src:/go/src/github.com/bdna/the_parrot_api/src"
+            - ".build:/build"
